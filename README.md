@@ -14,6 +14,11 @@ A Clojure JSON API for serving data scraped using the [caspca web scraper](https
 * GET /animals/random - Return 6 random animals
 * GET /animals/:id - Returns a single animal where id is a number 
 
+### See these endpoints in action at adamh.io
+* [http://adamh.io/spca-api/animals/](http://adamh.io/spca-api/animals/)
+* [http://adamh.io/spca-api/animals/random](http://adamh.io/spca-api/animals/random)
+* [http://adamh.io/spca-api/animals/1](http://adamh.io/spca-api/animals/1)
+
 ## License
 
 2017 Adam Hockensmith
