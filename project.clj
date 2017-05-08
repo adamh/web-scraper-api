@@ -16,10 +16,9 @@
   ; See https://github.com/weavejester/lein-ring#web-server-options for the
   ; various options available for the lein-ring plugin
   :ring {:handler web-scraper-api.handler/app
+         :port 8080
          :nrepl {:start? true
                  :port 9998}}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring-mock "0.1.5"]]}})
-
-;lein ring server-headless
