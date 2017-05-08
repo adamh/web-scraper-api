@@ -2,7 +2,7 @@
   :description "FIXME: write description"
   :url "http://adamh.io"
   :license {:name "MIT"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+            :url "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [ring/ring-core "1.6.0"]
                  [ring/ring-jetty-adapter "1.6.0"]
