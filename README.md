@@ -7,7 +7,7 @@ This is just a simple API for a tiny game I have in mind.
 ## Usage
 
 * Make sure you've run the [web scraper](https://github.com/adamh/clojure-web-scraper) and have the sqlite database.
-* Put the Database in the db/ directory
+* Put the Database in the db/ directory `db/database.db`
 * Run `lein ring server-headless`
 
 ## Data
