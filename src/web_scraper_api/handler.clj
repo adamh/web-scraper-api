@@ -14,8 +14,8 @@
       {:status 404}
       (-> (response (first results))
           (content-type "application/json"))))) 
-          ; compojure/ring kept repsponding with text/plain so 
-          ; I made an it an explicit content-type
+          ; compojure/ring kept repsponding with text/plain (?!) 
+          ; so I made an it an explicit content-type
 
 (defn get-all-animals
     []

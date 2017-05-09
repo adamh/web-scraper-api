@@ -1,6 +1,6 @@
 (defproject web-scraper-api "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://adamh.io"
+  :description "A small api for caspca animals"
+  :url "http://adamh.io/spca-api/"
   :license {:name "MIT"
             :url "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.8.0"]
