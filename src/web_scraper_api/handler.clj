@@ -22,12 +22,17 @@
     (-> (response (output-all-animals db))
         (content-type "application/json")))
 
+(defn select-unique-animals
+  [animals]
+  (let [unique-animals (set (repeatedly 6 #(rand-nth animals)))]
+    (if (< (count unique-animals) 6)
+      (select-unique-animals animals)
+      unique-animals)))
+
 (defn get-random-animals
     []
     (let [animals (output-all-animals db)]
-      (response [(rand-nth animals), (rand-nth animals), 
-                (rand-nth animals), (rand-nth animals),
-                (rand-nth animals), (rand-nth animals)])))
+      (response (select-unique-animals animals))))
 
 (defroutes app-routes
   (context "/animals" [] (defroutes animals-routes
