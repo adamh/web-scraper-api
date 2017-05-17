@@ -15,7 +15,7 @@
       (-> (response (first results))
           (content-type "application/json"))))) 
           ; compojure/ring kept repsponding with text/plain (?!) 
-          ; so I made an it an explicit content-type
+          ; so I made it an explicit content-type
 
 (defn get-all-animals
     []
@@ -31,7 +31,7 @@
 
 (defn get-random-animals
     []
-    (let [animals (output-all-animals db)]
+    (let [animals (output-animals-with-imgs db)]
       (response (select-unique-animals animals))))
 
 (defroutes app-routes

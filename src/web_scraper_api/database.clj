@@ -9,8 +9,12 @@
 
 (defn output-all-animals
   [conn]
-  (sql/query conn "select * from animals"))
+  (sql/query conn "SELECT * FROM animals"))
+
+(defn output-animals-with-imgs
+  [conn]
+  (sql/query conn "SELECT * FROM animals WHERE img IS NOT NULL"))
 
 (defn output-animal
   [conn, id]
-  (sql/query conn ["select * from animals where id = ?" id]))
+  (sql/query conn ["SELECT * FROM animals WHERE id = ?" id]))
